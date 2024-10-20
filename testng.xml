@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ASUS/OneDrive/Document/Experience/juaraCoding_PT.DIKA/UjianWeek3/page-object-page-factory/src/test/java/com/juaracoding/LoginTest.java">
+        <classes>
+            <class name="com.juaracoding.LoginTest"><methods><include name="testLoginValid"/>
+                <include name="testLoginInvalidUsername"/>
+                <include name="testLoginInvalidPassword"/>
+                <include name="testBlankUsername"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/ASUS/OneDrive/Document/Experience/juaraCoding_PT.DIKA/UjianWeek3/page-object-page-factory/src/test/java/com/juaracoding/ProductsTest.java">
+        <classes>
+            <class name="com.juaracoding.ProductsTest">
+                <methods>
+                    <include name="testAddProductToCart"/>
+                    <include name="testRemoveProductFromCart"/>
+                    <include name="testFailedAddProduct"/>
+                    <include name="testFailedRemoveProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
