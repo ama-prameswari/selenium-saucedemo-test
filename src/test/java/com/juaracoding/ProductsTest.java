@@ -60,7 +60,7 @@ public class ProductsTest {
     // --negative test--
     @Test(priority = 3)
     public void testFailedAddProduct() {
-        loginPage.loginUser("stand_use", "secret_sauce");
+        loginPage.loginUser("visual_user", "secret_sauce");
         productsPage.clickProductButton(2);
         Assert.assertEquals(productsPage.getTxtProductButton(2), "Add to cart");
         Assert.assertEquals(productsPage.getCartTotalItem(), 0);
@@ -69,7 +69,7 @@ public class ProductsTest {
     @Test(priority = 4)
     public void testFailedRemoveProduct() {
         // pre-condition
-        loginPage.loginUser("stand_use", "secret_sauce");
+        loginPage.loginUser("visual_user", "secret_sauce");
         productsPage.clickProductButton(1); // add first
         // step action
         productsPage.clickProductButton(1); // then try remove
